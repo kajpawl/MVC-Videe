@@ -4,17 +4,34 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Videe.Models;
+using Videe.ViewModels;
 
 namespace Videe.Controllers
 {
     public class MoviesController : Controller
     {
-        // GET: Movies
+        // GET: Movies/Random
         public ActionResult Random()
         {
             var movie = new Movie() { Name = "Shrek!" };
+            var customers = new List<Customer>
+            {
+                new Customer { Name = "Customer 1" },
+                new Customer { Name = "Customer 2" },
+            };
 
-            return View(movie);
+            var viewModel = new RandomMovieViewModel
+            {
+                Movie = movie,
+                Customers = customers
+            };
+
+            // ViewData["Movie"] = movie;
+            // ViewBag.Movie = movie;
+            // var viewResult = new ViewResult();
+            // viewResult.ViewData.Model
+
+            return View(viewModel);
         }
         
         public ActionResult Edit(int id)
