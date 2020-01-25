@@ -75,7 +75,4 @@ _[Ss]cripts
 *.ncrunchsolution
 *.dot[Cc]over
 
-appsettings.json
-*.db
-
-wwwroot
+App_Data/*.mdf
