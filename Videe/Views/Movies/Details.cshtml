@@ -1,14 +1,7 @@
 ﻿@model Videe.Models.Movie
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = Model.Name;
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@if (Model.Name != null)
-{
-    <h2>@Model.Name</h2>
-}
-else
-{
-    <h2>We currently don't have such movie.</h2>
-}
-
+<h2>@Model.Name</h2>
