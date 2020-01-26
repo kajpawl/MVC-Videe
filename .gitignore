@@ -75,4 +75,5 @@ _[Ss]cripts
 *.ncrunchsolution
 *.dot[Cc]over
 
-App_Data/*.mdf
+App_Data/
+Videe/App_Data/aspnet-Videe-20200124030729.mdf
