@@ -24,10 +24,12 @@ namespace Videe.Controllers
         public ActionResult New()
         {
             var membershipTypes = _context.MembershipTypes.ToList();
+
             var viewModel = new CustomerFormViewModel
             {
                 MembershipTypes = membershipTypes
             };
+
             return View("CustomerForm", viewModel);
         }
 
