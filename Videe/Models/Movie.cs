@@ -14,17 +14,15 @@ namespace Videe.Models
         [StringLength(255)]
         public string Name { get; set; }
 
-        [Required]
         [Display(Name = "Release Date")]
         public DateTime ReleaseDate { get; set; }
 
         [Display(Name = "Date Added")]
         public DateTime DateAdded { get; set; }
 
-        [Required]
         [Display(Name = "Number in Stock")]
         [Range(1, 20)]
-        public int InStock { get; set; }
+        public byte InStock { get; set; }
 
         public Genre Genre { get; set; }
 

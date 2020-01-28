@@ -226,6 +226,10 @@
     <Compile Include="Migrations\202001271309061_ListMembershipTypesInNewUser.Designer.cs">
       <DependentUpon>202001271309061_ListMembershipTypesInNewUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202001281849576_UpdateMovieModel.cs" />
+    <Compile Include="Migrations\202001281849576_UpdateMovieModel.Designer.cs">
+      <DependentUpon>202001281849576_UpdateMovieModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -359,6 +363,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202001271309061_ListMembershipTypesInNewUser.resx">
       <DependentUpon>202001271309061_ListMembershipTypesInNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001281849576_UpdateMovieModel.resx">
+      <DependentUpon>202001281849576_UpdateMovieModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
