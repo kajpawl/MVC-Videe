@@ -7,7 +7,7 @@ using Videe.Models;
 
 namespace Videe.Dtos
 {
-    public class CustpmerDto
+    public class CustomerDto
     {
         public int Id { get; set; }
 
