@@ -15,10 +15,10 @@ namespace Videe.App_Start
             Mapper.CreateMap<Customer, CustomerDto>();
             Mapper.CreateMap<Movie, MovieDto>();
 
-            CreateMap<CustomerDto, Customer>()
+            Mapper.CreateMap<CustomerDto, Customer>()
                 .ForMember(c => c.Id, opt => opt.Ignore());
 
-            CreateMap<MovieDto, Movie>()
+            Mapper.CreateMap<MovieDto, Movie>()
                 .ForMember(m => m.Id, opt => opt.Ignore());
         }
     }
