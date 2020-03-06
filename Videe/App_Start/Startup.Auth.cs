@@ -54,9 +54,9 @@ namespace Videe
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "3848954378463165",
+               appSecret: "1c5e0e38eea72bc6fdea190c95fbf16e");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
