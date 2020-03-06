@@ -6,12 +6,17 @@ namespace Videe.Models
     public class ExternalLoginConfirmationViewModel
     {
         [Required]
+        [Display(Name = "Email")]
+        public string Email { get; set; }
+
+        [Required]
         [Display(Name = "Driving Licence")]
         public string DrivingLicence { get; set; }
 
         [Required]
-        [Display(Name = "Email")]
-        public string Email { get; set; }
+        [StringLength(50)]
+        [Display(Name = "Telephone Number")]
+        public string TelephoneNumber { get; set; }
     }
 
     public class ExternalLoginListViewModel
@@ -68,6 +73,11 @@ namespace Videe.Models
 
     public class RegisterViewModel
     {
+        [Required]
+        [StringLength(50)]
+        [Display(Name = "Telephone Number")]
+        public string TelephoneNumber { get; set; }
+
         [Required]
         [Display(Name = "Driving Licence")]
         public string DrivingLicence{ get; set; }

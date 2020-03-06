@@ -155,8 +155,9 @@ namespace Videe.Controllers
                 var user = new ApplicationUser 
                 {
                     UserName = model.Email,
-                    Email = model.Email ,
-                    DrivingLicence = model.DrivingLicence
+                    Email = model.Email,
+                    DrivingLicence = model.DrivingLicence,
+                    TelephoneNumber = model.TelephoneNumber
                 };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
