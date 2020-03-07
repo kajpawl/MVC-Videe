@@ -202,6 +202,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\API\CustomersController.cs" />
     <Compile Include="Controllers\API\MoviesController.cs" />
+    <Compile Include="Controllers\API\NewRentalsController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -210,6 +211,7 @@
     <Compile Include="Dtos\GenreDto.cs" />
     <Compile Include="Dtos\MembershipTypeDto.cs" />
     <Compile Include="Dtos\MovieDto.cs" />
+    <Compile Include="Dtos\NewRentalDto.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -278,15 +280,21 @@
     <Compile Include="Migrations\202003061531105_AddTelephoneNumber.Designer.cs">
       <DependentUpon>202003061531105_AddTelephoneNumber.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202003071431265_Add rental model.cs" />
+    <Compile Include="Migrations\202003071431265_Add rental model.Designer.cs">
+      <DependentUpon>202003071431265_Add rental model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Genre.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Rental.cs" />
     <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -600,6 +608,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202003061531105_AddTelephoneNumber.resx">
       <DependentUpon>202003061531105_AddTelephoneNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003071431265_Add rental model.resx">
+      <DependentUpon>202003071431265_Add rental model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
