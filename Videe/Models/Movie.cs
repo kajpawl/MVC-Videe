@@ -24,6 +24,8 @@ namespace Videe.Models
         [Range(1, 20)]
         public byte InStock { get; set; }
 
+        public byte NumberAvailable { get; set; }
+
         public Genre Genre { get; set; }
 
         [Required]

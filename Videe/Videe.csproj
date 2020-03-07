@@ -284,6 +284,10 @@
     <Compile Include="Migrations\202003071431265_Add rental model.Designer.cs">
       <DependentUpon>202003071431265_Add rental model.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202003071654121_Update Movie class.cs" />
+    <Compile Include="Migrations\202003071654121_Update Movie class.Designer.cs">
+      <DependentUpon>202003071654121_Update Movie class.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -611,6 +615,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202003071431265_Add rental model.resx">
       <DependentUpon>202003071431265_Add rental model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003071654121_Update Movie class.resx">
+      <DependentUpon>202003071654121_Update Movie class.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

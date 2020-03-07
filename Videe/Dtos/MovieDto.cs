@@ -21,6 +21,8 @@ namespace Videe.Dtos
         [Range(1, 20)]
         public byte InStock { get; set; }
 
+        public byte NummberAvailable { get; set; }
+
         [Required]
         public byte GenreId { get; set; }
 
