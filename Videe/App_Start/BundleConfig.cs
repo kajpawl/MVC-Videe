@@ -31,6 +31,7 @@ namespace Videe
                       "~/Content/bootstrap-lumen.css",
                       "~/Content/datatables/datatables.bootstrap.css",
                       "~/Content/typeahead.css",
+                      "~/Content/bootstrap-theme.css",
                       "~/Content/toastr.css",
                       "~/Content/site.css"));
         }
